@@ -1,0 +1,13 @@
+{
+    "assets":{
+        "type":"command",
+        "command":{
+            "cmd":[
+                "tnpm i @ali/tnodecli -g",
+                "tnode init",
+                "tnode build",
+                "mv ./build $BUILD_DEST"
+            ]
+        }
+    }
+}

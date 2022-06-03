@@ -1,0 +1,65 @@
+<html>
+	<div class='header'>
+		<image class='icon' image='{{user.userLogo}}' lick='{{user.userUrl}}'/>
+		<div class='right'> 
+		<div class='top'> 
+			<text class='title' text='{{user.userNick}}'/>
+			<div class='tag' if='{{commentCount}} > 0'>
+				<text class='tag_text' text='{{commentCount}} 点评'/>
+			</div>
+		</div>
+		<text class='desc' text='{{title}}'/>
+		</div>
+	</div>
+</html>
+
+
+<style type="text/css">
+.header {
+	height: 163;
+	padding: 24,42,24,37;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.icon {
+	width: 84;
+	height: 84;
+	border-radius: 6;
+	clip: 1;
+	foreground-color: #00000005;
+}
+.right {
+	margin-left: 24;
+	flex: 1;
+	justify-content: space-between;
+}
+.top {
+	flex-direction: row;
+}
+.title {
+	font:system,32;
+	color: #333333;
+	flex: 1;
+}
+.tag {
+	background: linear-gradient(left, #ffe253, #ffca3a);
+	border-radius: 18;
+	clip: 1;
+	height: 36 ;
+}
+.tag_text {
+	font: system,20;
+	color: #ffffff;
+	text-align: center;	
+	padding: 16,10,16,10;
+	height: 36 ;
+	clip: 1;
+}
+.desc {
+	lines:1;
+	font: system,24;
+	color: #999999;
+}
+
+</style>
